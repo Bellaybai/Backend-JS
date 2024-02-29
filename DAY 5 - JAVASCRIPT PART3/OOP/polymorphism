@@ -1,0 +1,14 @@
+class Animal {
+    makeSound() {
+        return 'The anime makes a noise.'
+    }
+}
+
+class Cat  extends Animal {
+    makeSound() {
+        return super.makeSound() + 'I heard a cat Meoow'
+    }
+}
+
+const cat = new Cat();
+console.log(cat.makeSound());
